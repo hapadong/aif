@@ -1,0 +1,22 @@
+[Unit]
+Description=AI Innovation Forum App
+After=network.target
+
+[Service]
+User=aif
+Group=aif
+WorkingDirectory=/opt/aif
+ExecStart=/usr/bin/node /opt/aif/server.js
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
