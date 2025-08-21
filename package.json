@@ -1,0 +1,13 @@
+{
+  "name": "ai-innovation-forum",
+  "version": "1.0.0",
+  "description": "A simple website for the AI Innovation Forum.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
